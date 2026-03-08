@@ -1,0 +1,5 @@
+IP - curl ident.me
+
+DNS - cat /etc/resolv.conf
+
+MAC - ifconfig -a | cat /sys/class/net/*/address
