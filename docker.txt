@@ -1,0 +1,35 @@
+apt install docker -y
+apt install docker.io -y
+------------------------
+sudo apt update -y
+sudo apt install -y docker.io curl screen
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo usermod -aG docker $USER
+docker run hello-world
+------------------------
+docker search
+docker pull alpine
+docker run -it alpine
+---------------------
+apk update && apk upgrade
+apk add git nano screen
+-------------------------------------
+docker search kalilinux/kali-rolling
+docker pull kalilinux/kali-rolling
+docker run -it kalilinux/kali-rolling
+-------------------------------------
+Intel Clear Linux OS
+########################
+docker search clearlinux
+docker pull clearlinux
+docker run -it clearlinux
+#########################
+swupd update && swupd bundle-add wget screen git -y
+---------------------------------------------------
+docker image ls
+-----------------------------------
+docker image   prune --all --force
+docker system  prune --all --force
+-----------------------------------
+
