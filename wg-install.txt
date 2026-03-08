@@ -1,0 +1,16 @@
+WireGuard install [VPS]
+--------------------------------------------------
+apt install -y openresolv net-tools nano wireguard
+nano /etc/wireguard/wg0.conf
+----------------------------
+PostUp = ip -4 rule add from XX.XXX.XXX.XX lookup main prio 18
+PostDown = ip -4 rule delete from XX.XXX.XXX.XX lookup main prio 18
+-------------------------------------------------------------------
+wg-quick up wg0
+wg-quick down wg0
+-----------------
+wg show
+curl ident.me
+ping 1.1.1.1 -Iwg0
+------------------
+vnstat -l -i wg0 wg1 wg2
