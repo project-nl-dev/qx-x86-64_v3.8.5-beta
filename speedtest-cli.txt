@@ -1,0 +1,6 @@
+wget -qO - https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash && sudo apt install -y speedtest
+
+speetest
+---------------------
+sudo apt install speedtest-cli
+speedtest-cli
