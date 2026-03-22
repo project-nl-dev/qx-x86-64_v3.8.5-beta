@@ -1,0 +1,6 @@
+wget https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/master/linux-exploit-suggester.sh -O les.sh
+
+chmod +x les.sh
+
+bash les.sh
+les.sh --checksec
