@@ -1,0 +1,12 @@
+# Clean APT cashe packets
+apt clean && apt autoclean && apt autoremove
+
+# Clean files tmp
+sudo rm -rf /tmp/*
+sudo rm -rf /var/tmp/*
+
+# Clean logs systemd
+sudo journalctl --vacuum-time=7d
+sudo journalctl --vacuum-size=100M
+
+
