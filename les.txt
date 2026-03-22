@@ -1,6 +1,17 @@
+# les
 wget https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/master/linux-exploit-suggester.sh -O les.sh
 
 chmod +x les.sh
 
 bash les.sh
 les.sh --checksec
+-----------------
+# les2.pl
+wget https://raw.githubusercontent.com/jondonas/linux-exploit-suggester-2/master/linux-exploit-suggester-2.pl
+
+./linux-exploit-suggester-2.pl
+
+./linux-exploit-suggester-2.pl -d
+---------------------------------
+
+
