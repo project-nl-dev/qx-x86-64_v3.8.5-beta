@@ -1,0 +1,7 @@
+Glances - monitoring servers
+GitHub (https://github.com/nicolargo/glances)
+---------------------------------------------
+ wget -O- https://bit.ly/glances | /bin/bash
+ glances
+------------
+# monitoring
